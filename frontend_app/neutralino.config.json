@@ -21,6 +21,8 @@
     "window.minimize",
     "window.unmaximize",
     "window.isMaximized",
+    "window.hide",
+    "window.show",
     "window.move"
   ],
   "globalVariables": {

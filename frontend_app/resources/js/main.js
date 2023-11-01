@@ -13,7 +13,7 @@ function setTray() {
         console.log("INFO: Tray menu is only available in the window mode.");
         return;
     }
-    
+
     let tray = {
         icon: "/resources/icons/trayIcon.png",
         menuItems: [
@@ -28,11 +28,12 @@ function setTray() {
 function onTrayMenuItemClicked(event) {
     switch(event.detail.id) {
         case "OPEN":
+            Neutralino.window.show();
             Neutralino.window.maximize();
             if (!isMaximizedAtStart)  {
                 setTimeout(() => {
                     Neutralino.window.unmaximize();
-                }, 10)
+                }, 2)
             }
             break;
         case "QUIT":
