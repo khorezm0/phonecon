@@ -45,13 +45,13 @@ body {
     flex-grow: 1;
 }
 .justify-start {
-    justify-items: start;
+    justify-content: start;
 }
 .justify-end {
-    justify-items: end;
+    justify-content: end;
 }
 .justify-center {
-    justify-items: center;
+    justify-content: center;
 }
 .align-start {
     align-items: start;
@@ -189,4 +189,24 @@ body {
     white-space: pre-line;
     width: 100%;
     text-align: left;
+}
+
+.app-pair-phone {
+
+}
+
+.app-pair-phone img {
+    width: 320px;
+}
+
+.app-pair-phone .ip-item {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+.app-pair-phone .ip-item span:first-child {
+    margin-right: 10px;
+    width: 132px;
+    text-align: left;
+    font-family: monospace;
 }
